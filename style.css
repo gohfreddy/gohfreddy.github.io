@@ -1,0 +1,613 @@
+/* ------------------------------------------------------ */
+/* CORE STYLES */
+/* ------------------------------------------------------ */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+    color: #4C4C4C;
+}
+
+a, 
+a:hover{
+    color: #00AA8D;
+}
+
+
+/* Link Underline Animation */
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00AA8D;
+    transition: width .3s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+
+/* Section Title */
+h1{
+    font: 300, 2em, 'Open sans', sans-serif;
+}
+
+/* Subsection Title */
+h2{
+    font: 500, 1.5em, 'Open sans', sans-serif;
+}
+
+/* Body Heading */
+h3{
+    font: 600, 1.25em, 'Open sans', sans-serif
+}
+
+/* Body Subheading */ 
+h4{ 
+    font: 300, 1.2em, 'Open sans', sans-serif;
+}
+
+/* Section Intro */
+h5{
+    font: 300, 0.75em, 'Open sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #4C4C4C;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+/* Body Text */
+p{
+    font: 300, 1em, 'Open sans', sans-serif;
+    color: #4C4C4C;
+    margin-bottom: 1.5em;
+}
+
+/* TEXT COLOURS */
+.highlight{
+    color: #00AA8D;
+    font-weight: 600;
+}
+
+.text-faded{
+    color: #BBB;
+}
+
+.button{
+    /* Button Box */
+    background-color: #FFF;
+    border: 2px solid #00AA8D;
+    padding: 0 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    height: 48px;
+    margin: 0 auto;
+    
+    /* Button Text */
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #00AA8D;
+    font-size: 0.8em;
+    letter-spacing: 0.6px;
+    
+    transition: all 0.25s;
+}
+
+.button:hover{
+    background-color: #00AA8D;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.center-button{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------ */
+/* UNIVERSAL */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* HEADER SECTION */
+/* ------------------------------------------------------ */
+
+nav{
+    border-top: #00AA8D 5px solid;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;    
+}
+
+nav ul li{
+    margin: auto;
+    padding: 1em;
+}
+
+/* Overwrite Bootstrap classes to change link colours */
+.navbar-nav.ml-auto li.nav-item a.nav-link{
+    color: #888;
+}
+
+.navbar-nav.ml-auto li.nav-item a.nav-link:hover{
+    color: #00AA8D;
+}
+
+
+/* Logo Animation: grey -> teal; angled -> vertical */
+.logo{
+    height: 80px;
+    width: 80px;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-out;
+}
+
+.logo:hover{
+    filter: none;
+    transform: rotate(45deg);
+}
+
+
+
+/* ------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------ */
+
+footer{
+    border-top: #00AA8D 5px solid;
+    background-color: #FFF;
+    padding: 4em;
+}
+
+.footer-links{
+    margin: 2em;
+    text-align: center;
+}
+
+
+.footer-links ul{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links ul li a{
+    color: #888;
+    padding: 2em;
+}
+
+.footer-links ul li a:hover {
+    color: #00AA8D;
+    padding: 2em;
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2em;
+}
+
+.copyright-text{
+    color: #BBB;
+}
+
+
+
+
+/* ------------------------------------------------------ */
+/* HOME PAGE */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* INTRO SECTION */
+/* ------------------------------------------------------ */
+
+.jumbotron{ 
+    background-color: #fff;
+} 
+
+
+/* ------------------------------------------------------ */
+/* PROJECTS SECTION */
+/* ------------------------------------------------------ */
+
+#projects{
+    background-color: #FFF;
+    /* border-top: #DDD 1px solid; */
+    padding: 2em 0 5em;
+    align-content: center;
+}
+
+.card{
+    margin: 2em auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23); /* Level 2 drop shadow - adjusted */
+    overflow: hidden;
+}
+
+.card:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-body{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+a .card-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none; /* Link doesn't get underlines */
+    z-index: 10; /* Raise anchor tag above anything else
+    Workaround to make clickable in IE */
+    background-color: #FFF;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.card-title{
+    font-weight: 700;
+    color: #FFF;
+    margin-bottom: 1em;
+}
+
+.card-text{
+    color: #FFF; /* Set colours to override link defaults*/
+}
+
+.card-img{
+    width: auto;
+    height: 100%;
+    padding: 2em 0;
+    /* Ensures image is in the middle and cropped */
+    text-align: center;
+    overflow: hidden;   
+}
+
+
+/* Difference between overlays is the background color */ 
+/* uwbc = #C0392B */
+.overlay-uwbc{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    background-color: #C0392B;
+}
+/* reach+ = #00AA8D */
+.overlay-reach{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    background-color: #00AA8D;
+}
+
+
+.card:hover .overlay-uwbc{
+    opacity: 0.95;
+}
+
+.card:hover .overlay-reach{
+    opacity: 0.95;
+}
+
+
+
+
+/* ------------------------------------------------------ */
+/* ABOUT PAGE */
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* PRIMER SECTION */
+/* ------------------------------------------------------ */
+
+.portrait{
+    display: block;
+    margin: auto;
+}
+
+
+/* ------------------------------------------------------ */
+/* BACKGROUND SECTION */
+/* ------------------------------------------------------ */
+
+#background{
+    padding: 1em 0 5em;
+    background-color: #FFF;
+}
+
+.background-feature{
+    max-width: 80%;
+    height: auto;
+}
+
+
+.feature-block{
+    margin: 2em 0;
+}
+
+.dash{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+.dash li:before{
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+.revealed-panel:hover ~ .hidden-panel{
+/*     display:block;
+     */    /* visibility: visible; */
+    opacity: 1;
+    height: auto;
+}
+
+.hidden-panel{
+/*     display:none;
+     */    /* visibility: hidden; */
+    color: #777;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-in;
+}
+
+.hidden-panel{
+    font-size: 0.9em;
+}
+
+
+/* ------------------------------------------------------ */
+/* LETTER SECTION */
+/* ------------------------------------------------------ */
+
+
+#letter{
+    padding: 5em 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
+    background-color: #FAFAFA;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+.ending-image{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+/* ------------------------------------------------------ */
+/* UWBC CASE STUDY PAGE */ 
+/* ------------------------------------------------------ */
+
+/* ------------------------------------------------------ */
+/* REACH CASE STUDY PAGE */ 
+/* ------------------------------------------------------ */
+
+.highlight-uwbc{
+  color: #C0392B;  
+} 
+
+/* ------------------------------------------------------ */
+/* INTRO SECTION */
+/* ------------------------------------------------------ */
+
+.mockups{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin: 5em 0;
+}
+
+/* ------------------------------------------------------ */
+/* OVERVIEW SECTION */
+/* ------------------------------------------------------ */
+
+#cs-overview{
+    padding: 5em 0;
+    background-color: #FAFAFA;
+}
+
+#cs-overview p{
+    margin-bottom: 2em;
+}
+
+/* ------------------------------------------------------ */
+/* APPROACH SECTION */
+/* ------------------------------------------------------ */
+
+#cs-approach{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+.approach-process{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.process-wrapper{
+    text-align: center;
+}
+
+.process-wrapper ul{
+    text-align: left;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+}
+
+.process-wrapper li{
+    font-size: 0.9em;
+}
+
+
+
+/* ------------------------------------------------------ */
+/* USER RESEARCH SECTION */
+/* ------------------------------------------------------ */
+
+#cs-userresearch{
+    padding: 5em 0;
+    background-color: #FAFAFA;
+}
+
+#cs-userresearch h4{
+    margin: 2em 0;
+}
+
+#cs-userresearch img{
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+}
+
+.caption{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ------------------------------------------------------ */
+/* IDEATION SECTION */
+/* ------------------------------------------------------ */
+#cs-ideation{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+#cs-ideation img{
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+}
+
+#cs-ideation h4{
+    margin: 2em 0;
+}
+
+/* ------------------------------------------------------ */
+/* WIREFRAME SECTION */
+/* ------------------------------------------------------ */
+#cs-wireframes{
+    padding: 5em 0;
+    background-color: #FAFAFA;
+}
+
+/* #cs-wireframes img{
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+} */
+
+#cs-wireframes h4{
+    margin: 2em 0;
+}
+
+/* ------------------------------------------------------ */
+/* USABILITY TESTING SECTION */
+/* ------------------------------------------------------ */
+#cs-usabilitytesting{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+#cs-usabilitytesting img{
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+}
+
+#cs-usabilitytesting h4{
+    margin: 2em 0;
+}
+
+
+/* ------------------------------------------------------ */
+/* FINAL DESIGN SECTION */
+/* ------------------------------------------------------ */
+#cs-finaldesign{
+    padding: 5em 0;
+    background-color: #FAFAFA;
+}
+
+#cs-finaldesign img{
+    max-width: 100%;
+    height: auto;
+    margin: 1.5em 0;
+}
+
+#cs-finaldesign h4{
+    margin: 2em 0;
+}
+
+/* ------------------------------------------------------ */
+/* REFLECTION SECTION */
+/* ------------------------------------------------------ */
+
+#cs-reflection{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+
+/* ------------------------------------------------------ */
+/* CTA SECTION */
+/* ------------------------------------------------------ */
+
+#cs-cta{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+#cs-cta button:hover{
+    color: #FFF;
+}
