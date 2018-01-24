@@ -37,6 +37,9 @@ a:hover{
     width: 100%;
 }
 
+.list-header{
+    margin-bottom: 0;
+}
 
 /* Section Title */
 h1{
@@ -238,7 +241,7 @@ footer{
 }
 
 .card{
-    margin: 2em auto;
+    margin: 0 auto 5em;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23); /* Level 2 drop shadow - adjusted */
     overflow: hidden;
@@ -289,8 +292,9 @@ a .card-link{
     overflow: hidden;   
 }
 
-
+/* Create Overlay Colours Based on Project Colours */
 /* Difference between overlays is the background color */ 
+
 /* uwbc = #C0392B */
 .overlay-uwbc{
     position: absolute;
@@ -304,6 +308,10 @@ a .card-link{
     transition: .4s ease-in-out;
     background-color: #C0392B;
 }
+.card:hover .overlay-uwbc{
+    opacity: 0.95;
+}
+
 /* reach+ = #00AA8D */
 .overlay-reach{
     position: absolute;
@@ -317,17 +325,26 @@ a .card-link{
     transition: .4s ease-in-out;
     background-color: #00AA8D;
 }
-
-
-.card:hover .overlay-uwbc{
-    opacity: 0.95;
-}
-
 .card:hover .overlay-reach{
     opacity: 0.95;
 }
 
-
+/* uwbc-ers = #F5A623 */
+.overlay-uwbc-ers{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    background-color: #F5A623;
+}
+.card:hover .overlay-uwbc-ers{
+    opacity: 0.95;
+}
 
 
 /* ------------------------------------------------------ */
@@ -431,12 +448,21 @@ a .card-link{
 /* REACH CASE STUDY PAGE */ 
 /* ------------------------------------------------------ */
 
+
+/* ------------------------------------------------------ */
+/* COLOURS */
+/* ------------------------------------------------------ */
+
 .highlight-uwbc{
   color: #C0392B;  
 } 
 
+.highlight-reach{
+  color: #00AA8D;  
+} 
+
 /* ------------------------------------------------------ */
-/* INTRO SECTION */
+/* CLASSES */
 /* ------------------------------------------------------ */
 
 .mockups{
@@ -444,28 +470,6 @@ a .card-link{
     height: auto;
     vertical-align: middle;
     margin: 5em 0;
-}
-
-/* ------------------------------------------------------ */
-/* OVERVIEW SECTION */
-/* ------------------------------------------------------ */
-
-#cs-overview{
-    padding: 5em 0;
-    background-color: #FAFAFA;
-}
-
-#cs-overview p{
-    margin-bottom: 2em;
-}
-
-/* ------------------------------------------------------ */
-/* APPROACH SECTION */
-/* ------------------------------------------------------ */
-
-#cs-approach{
-    padding: 5em 0;
-    background-color: #FFF;
 }
 
 .approach-process{
@@ -489,125 +493,64 @@ a .card-link{
     font-size: 0.9em;
 }
 
-
-
-/* ------------------------------------------------------ */
-/* USER RESEARCH SECTION */
-/* ------------------------------------------------------ */
-
-#cs-userresearch{
-    padding: 5em 0;
-    background-color: #FAFAFA;
-}
-
-#cs-userresearch h4{
-    margin: 2em 0;
-}
-
-#cs-userresearch img{
-    max-width: 100%;
-    height: auto;
-    margin: 1.5em 0;
-}
-
 .caption{
     display: block;
     text-align: center;
     font-weight: 600;
 }
 
-/* ------------------------------------------------------ */
-/* IDEATION SECTION */
-/* ------------------------------------------------------ */
-#cs-ideation{
-    padding: 5em 0;
-    background-color: #FFF;
-}
-
-#cs-ideation img{
-    max-width: 100%;
+.limit-img-50{
+    max-width: 50%;
     height: auto;
-    margin: 1.5em 0;
 }
 
-#cs-ideation h4{
-    margin: 2em 0;
+.limit-img-25{
+    max-width: 25%;
+    height: auto;
+}
+
+.quote{
+    margin: 3em;
+    color: #888;s
+    font-weight: 300;
+    text-align: center;
 }
 
 /* ------------------------------------------------------ */
-/* WIREFRAME SECTION */
+/* GREY BACKGROUND SECTION */
 /* ------------------------------------------------------ */
-#cs-wireframes{
+
+#cs-bg-grey{
     padding: 5em 0;
     background-color: #FAFAFA;
 }
 
-/* #cs-wireframes img{
-    max-width: 100%;
-    height: auto;
-    margin: 1.5em 0;
-} */
-
-#cs-wireframes h4{
+#cs-bg-grey h4{
     margin: 2em 0;
 }
 
-/* ------------------------------------------------------ */
-/* USABILITY TESTING SECTION */
-/* ------------------------------------------------------ */
-#cs-usabilitytesting{
-    padding: 5em 0;
-    background-color: #FFF;
-}
-
-#cs-usabilitytesting img{
+#cs-bg-grey img{
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
 }
 
-#cs-usabilitytesting h4{
+/* ------------------------------------------------------ */
+/* WHITE BACKGROUND SECTION */
+/* ------------------------------------------------------ */
+
+#cs-bg-white{
+    padding: 5em 0;
+    background-color: #FFF;
+}
+
+#cs-bg-white h4{
     margin: 2em 0;
 }
 
-
-/* ------------------------------------------------------ */
-/* FINAL DESIGN SECTION */
-/* ------------------------------------------------------ */
-#cs-finaldesign{
-    padding: 5em 0;
-    background-color: #FAFAFA;
-}
-
-#cs-finaldesign img{
+#cs-bg-white img{
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
 }
 
-#cs-finaldesign h4{
-    margin: 2em 0;
-}
-
-/* ------------------------------------------------------ */
-/* REFLECTION SECTION */
-/* ------------------------------------------------------ */
-
-#cs-reflection{
-    padding: 5em 0;
-    background-color: #FFF;
-}
-
-
-/* ------------------------------------------------------ */
-/* CTA SECTION */
-/* ------------------------------------------------------ */
-
-#cs-cta{
-    padding: 5em 0;
-    background-color: #FFF;
-}
-
-#cs-cta button:hover{
-    color: #FFF;
-}

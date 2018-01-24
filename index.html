@@ -15,6 +15,16 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113022205-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-113022205-1');
+    </script>
+
 </head>
 
 <body>
@@ -27,7 +37,7 @@
                 <div class="navbar-brand">
                     <a href="index.html"><img src="/img/LogoFlat.svg" alt="FG" class="logo"></a>
                 </div>
-
+ 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -63,6 +73,7 @@
     <!-- Project Showcase -->
 
     <section id="projects">
+       <h5 class="text-faded">UX Design</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -99,7 +110,29 @@
                         </a>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        
+        <h5 class="text-faded">Service Design</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <a href="uwbcers.html" class="card-link">
+                            <div class="card-img">
+                                <img class="img-fluid mx-auto d-block" src="/img/UWBC_ERSPreview.png" alt="UWBC ERS Preview">
+                            </div>
+                            <div class="overlay-uwbc-ers">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        UW Badminton Club Exec Recognition System
+                                    </h4>
+                                    <p class="card-text">A system designed to faciliate a fun and competitive environment for UWBC execs to improve exec retention.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
