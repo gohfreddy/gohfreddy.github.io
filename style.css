@@ -388,7 +388,7 @@ a .card-link{
 
 .dash li:before{
     display: inline-block;
-    content: "-";
+    content: "–";
     width: 1em;
     margin-left: -1em;
 }
