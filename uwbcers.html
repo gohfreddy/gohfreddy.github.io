@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <title>Frederick Goh | UWBC ERS Case Study</title>
+    <link rel="shortcut icon" href="/favicon.png">
 
     <!-- Style Sheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -13,15 +14,18 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113022205-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-113022205-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113022205-1');
     </script>
 
 </head>
@@ -43,7 +47,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/FrederickGoh_Resume_Jan2018.pdf">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/FrederickGoh_Resume_Feb2018.pdf">Resume</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,17 +60,15 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
                         <h1>UWBC Exec Recognition System</h1>
                         <h4><small>Sep – Nov 2017</small></h4>
                         <br>
                         <p>University of Waterloo Badminton Club (UWBC) depends on its execs to maintain operations and service to the general members. Exec retention rates have declined which poses a problem towards sustaining the club in the future.</p>
+                        <img src="/img/UWBC_ERSPreview.png" alt="Mockups" class="mockups mx-auto d-block">
                     </div>
-                    <div class="col-lg-3"></div>
-                </div>
-                <div class="row">
-                    <img src="/img/UWBC_ERSPreview.png" alt="Mockups" class="mockups mx-auto d-block">
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
         </div>
@@ -122,11 +124,15 @@
                         <li>lost interest in the club</li>
                         <li>had a difficult time balancing the exec position with school</li>
                     </ul>
-                    <p><strong>Limitation</strong>: It is difficult to diagnose the reason execs had for discontinuing their service with the available data. Other reasons may include: termination due to poor performance, graduation/completion of school,  or a promotion to a director position.</p>
+                    <p class="list-header">Other reasons may include: </p>
+                    <ul class="dash">
+                        <li>termination due to poor performance</li>
+                        <li>graduation/completion of school</li> <li>promotion to a director position</li>
+                    </ul>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            
+
         </div>
     </section>
 
@@ -161,10 +167,11 @@
                 <div class="col-lg-2"></div>
             </div>
 
-            <h4>Teams</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Teams</h4>
                     <p>Teams were balanced based on gender and exec experience. </p>
                     <p>Teams created their own team name and logo they would represent for the term. The final logos were based on each team's submitted sketch.</p>
                 </div>
@@ -174,25 +181,23 @@
                     <p class="caption">Finalized logo for team Keguri</p>
                 </div>
             </div>
-            
-            
-            <h4>Points</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Points</h4>
                     <p>Point entry was done through Google Forms with dropdown menus for exec name, denomination of points, and category (explained in the next section). Lastly, a note must be made describing the exec's actions.</p>
                     <img src="img/uwbc_ers_casestudy/ERSform.png" alt="ERS Form" class="mx-auto d-block img-fluid">
                     <p>All directors were allowed to use this form to enter points and I reviewed the responses regularly to delete any duplicate entries.</p>
-                    <p>Example Entry: 
-                    "Anna – 5 points – Initiative – First exec to help cleanup"</p>
+                    <p>Example Entry: "Anna – 5 points – Initiative – First exec to help cleanup"</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            
-            <h4>Categories</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Categories</h4>
                     <p>Point categories help execs understand <strong>how</strong> they can earn points for their team. Different categories are represented by badges which can be earned.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -231,11 +236,11 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            
-            <h4>Badges</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Badges</h4>
                     <p>Badges encourage specific behaviour by having achievements for teams to complete (to unlock/upgrade badges).</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -256,11 +261,11 @@
                     <img src="img/uwbc_ers_casestudy/Placements.png" alt="Badge Placements" class="d-block mx-auto img-fluid">
                 </div>
             </div>
-            
-            <h4>Competition Badge</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Competition Badge</h4>
                     <p>Exec socials turned into competitive events where they compete to earn a special badge and points.</p>
                     <p>For this particular term, I organized a relay race and a game show. In the previous term, I organized a pumpkin carving contest and a multi-station challenge.</p>
                 </div>
@@ -269,11 +274,11 @@
                     <img src="img/uwbc_ers_casestudy/Competition_1st_relayrace.png" alt="Competition Badge" class="d-block mx-auto img-fluid">
                 </div>
             </div>
-            
-            <h4>Leaderboard</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Leaderboard</h4>
                     <p>This dispalys the team rankings and team profile cards. This was updated every 3-4 weeks.</p>
                     <p>Profile card contained: team rank, logo, roster, total points, and badges earned. This helped teams visualize their collective achievements and progress.</p>
                 </div>
@@ -281,11 +286,11 @@
             </div>
             <img src="img/uwbc_ers_casestudy/Template.png" alt="Template Profile Card" class="mx-auto d-block img-fluid">
             <p class="caption">Profile Card Template</p>
-            
-            <h4>Rewards</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Rewards</h4>
                     <p><strong>Mid-Term</strong>: The highest point earners from each team was treated to bubble tea.</p>
                     <p><strong>End-of-Term</strong>: The winning team was rewarded an all-expenses paid team dinner.</p>
                 </div>
@@ -294,26 +299,25 @@
         </div>
     </section>
 
-    
+
 
     <!-- Final Design Section -->
-    
+
     <section id="cs-bg-grey">
         <h5>Evaluation</h5>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
                     <p>The final team standings and leaderboard are hosted <a href="http://www.badmintonclub.uwaterloo.ca/staff/Winter%202017/teams.html">here</a>. We also collected exec feedback on the ERS using an anonymous survey.</p>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-2"></div>
             </div>
-            
-            <h4>Feedback</h4>
-            
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Feedback</h4>
                     <p class="quote">"I liked it, it allowed us to really bond with the people in my group and the team challenges were a lot of fun."</p>
                     <p class="quote">"I thought this made this term far more interesting and allowed me to get to know some other execs better, especially within my team/house... It's kind of like being in o-week teams again, except we have a lot of time to get to know each other. So yes, I would totally love to see this happen again."</p>
                     <p class="quote">"...it motivates execs to help out more which makes session more efficient. Also, it helps new execs feel like they're part of a group because it may be hard to make friends in a large group."</p>
@@ -321,11 +325,11 @@
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            
-            <h4>Reflection</h4>
+
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <h4>Summary</h4>
                     <p>Does the exec recognition system (ERS) solve the problem?</p>
                     <p>Does the ERS address exec retention by recognizing and appreciating execs for their efforts?</p>
                     <img src="img/uwbc_ers_casestudy/RetentionGraph_vector_2017.png" alt="Updated Retention Graph" class="mx-auto d-block img-fluid">
@@ -341,28 +345,29 @@
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-        
+
         </div>
     </section>
 
-   <!-- Reflection Section-->
-   
+    <!-- Reflection Section-->
+
     <section id="cs-bg-white">
-        <h5>Summary</h5>
+        <h5>Reflection</h5>
         <div class="container">
-           <div class="row">
-           <div class="col-lg-2"></div>
-           <div class="col-lg-8">
-                <p>Logistically, other directors mentioned that it was extra effort for them to update points and maintain a system like ERS on top of regular club operations.</p>
-                <p>The successful components of ERS include: teams, organized exec events, rewards, and feedback. The sense of being a part of a team allow new execs to have a support system to fall upon. Organized exec events should encourage teamwork. Rewards and verbal feedback are also important elements to reassure execs that they are valued. I am not sure how these components will work without PBLs but I look forward to the future of UWBC.</p>
-            </div>
-            <div class="col-lg-2"></div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <p>One <strong>limitation</strong> during the research phase was the ability to diagnose the real reason execs had for discontinuing their service with the available data. It would have been nice to complete exit interviews or start doing exit interviews with execs.</p>
+                    <p>Logistically, other directors mentioned that it was extra effort for them to update points and maintain a system like ERS on top of regular club operations.</p>
+                    <p>The successful components of ERS include: teams, organized exec events, rewards, and feedback. The sense of being a part of a team allow new execs to have a support system to fall upon. Organized exec events should encourage teamwork. Rewards and verbal feedback are also important elements to reassure execs that they are valued. I am not sure how these components will work without PBLs but I look forward to the future of UWBC.</p>
+                </div>
+                <div class="col-lg-2"></div>
             </div>
         </div>
     </section>
 
-   <!-- CTA Section -->
-   
+    <!-- CTA Section -->
+
     <section id="cs-bg-white">
         <div class="container">
             <a href="index.html#projects">
@@ -380,11 +385,11 @@
                 <ul>
                     <li><a class="nav-link" href="mailto:goh.frederick@gmail.com">Email</a></li>
                     <li><a class="nav-link" href="https://www.linkedin.com/in/frederick-goh-213b9782/">LinkedIn</a></li>
-                    <li><a class="nav-link" href="/Dec2017_Design.pdf">Resume</a></li>
+                    <li><a class="nav-link" href="/FrederickGoh_Resume_Feb2018.pdf">Resume</a></li>
                 </ul>
             </div>
             <div class="copyright">
-                <p class="text-faded">Design and coded by Frederick Goh 2017</p>
+                <p class="text-faded">Design and coded by Frederick Goh 2018</p>
             </div>
         </div>
     </footer>

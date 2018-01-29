@@ -356,6 +356,7 @@ a .card-link{
 /* ------------------------------------------------------ */
 
 .portrait{
+    width: 200px;
     display: block;
     margin: auto;
 }
@@ -393,23 +394,21 @@ a .card-link{
     margin-left: -1em;
 }
 
-.revealed-panel:hover ~ .hidden-panel{
-/*     display:block;
-     */    /* visibility: visible; */
+/* .revealed-panel:hover ~ .hidden-panel{
+
     opacity: 1;
     height: auto;
 }
 
 .hidden-panel{
-/*     display:none;
-     */    /* visibility: hidden; */
+
     color: #777;
     height: 0;
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.3s ease-in;
 }
-
+ */
 .hidden-panel{
     font-size: 0.9em;
 }
@@ -448,6 +447,16 @@ a .card-link{
 /* REACH CASE STUDY PAGE */ 
 /* ------------------------------------------------------ */
 
+/* ------------------------------------------------------ */
+/* SECTION HEADER */
+/* ------------------------------------------------------ */
+
+.section-header{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 2em 0 1em;
+}
 
 /* ------------------------------------------------------ */
 /* COLOURS */
@@ -459,6 +468,10 @@ a .card-link{
 
 .highlight-reach{
   color: #00AA8D;  
+} 
+
+.highlight-ers{
+  color: #F5A623;  
 } 
 
 /* ------------------------------------------------------ */
