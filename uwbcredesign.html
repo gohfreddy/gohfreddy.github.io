@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113022205-1"></script>
@@ -38,7 +40,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a href="index.html"><img src="/img/LogoFlat.svg" alt="FG" class="logo"></a>
+                    <a href="index.html"><img src="/img/LogoFlat_light.svg" alt="FG" class="logo"></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -56,16 +58,15 @@
 
     <!-- Intro Section -->
 
-    <section id="cs-intro">
+    <section id="cs-intro" class="bg-uwbc">
         <div class="jumbotron jumbotron-fluid">
+<div class="project-title text-center highlight-uwbc">UWBC Website Redesign</div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <h1>UWBC Website Redesign</h1>
-                        <h4><small>Sep – Nov 2017</small></h4>
                         <br>
-                        <p>University of Waterloo Badminton Club (UWBC) organizes and hosts sessions and events for its members. The club's website holds important information but hasn't had a major update for years.</p>
+                        <p class="text-center">University of Waterloo Badminton Club (UWBC) organizes and hosts sessions and events for its members. The club's website holds important information but hasn't had a major update for years.</p>
                         <img src="/img/uwbc_casestudy/Mocks.png" alt="Mockups" class="mockups mx-auto d-block">
                     </div>
                     <div class="col-lg-2"></div>
@@ -74,41 +75,88 @@
         </div>
     </section>
 
-    <!-- Overview Section -->
 
-    <section id="cs-bg-grey">
-        <h5>Overview</h5>
+    <section class="bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p><strong>Problem</strong>: The UWBC website is the main source for information available to the general public. The website has not been updated for years and uses stock CSS from the university. User expectations and the nature of how they interact with websites have changed drastically.</p>
-                    <br>
-                    <p><strong>Client</strong>: University of Waterloo Badminton Club – a non-profit, student-run club</p>
-                    <br>
-                    <p><strong>Role</strong>: Project management and design</p>
-                    <br>
-                    <p><strong>Note</strong>: This was an individual project which I took upon myself. As a former director of the club, I had a good understanding for the need of this project and strong connections within the club.</p>
-                    <br>
-                    <p><strong>Links</strong>: <a href="https://invis.io/UTFFRKKKWF2">Final Prototype</a></p>
-                    <br>
+                    <div class="header-small text-center">Original Website</div>
+                    <div class="header-large text-center">Outdated and unengaging</div>
+                    <p>If you want to find out what UWBC is about and what they do, their website is the main source for that. However, the website has not been updated for years and uses outdated stock CSS from the university. User expectations and the nature of how they interact with websites in the present are drastically different compared to ten years ago.</p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/uwbc_casestudy/original_Home.png" alt="Original Home Page" class="mx-auto d-block">
+                    <div class="wrap-list">
+                        <p class="figure-caption">Home Page</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/uwbc_casestudy/original_To%20Join.png" alt="Original To Join Page" class="mx-auto d-block">
+                    <p class="figure-caption">To Join Page</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/uwbc_casestudy/original_Level%20Rubric.png" alt="Original Level Link" class="mx-auto d-block">
+                    <p class="figure-caption">Level Information Link</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="subheader text-center">First Impression</div>
+                    <div class="wrap-list">
+                        <ul class="dash">
+                            <li>links are distracting (especially the social media buttons)</li>
+                            <li>with nav links on the left and quick links on the right, where do you start?</li>
+                            <li>content is condensed and text-heavy</li>
+                            <li>level information is linked as a PDF but should have its own page</li>
+                        </ul>
+                    </div>
+                    <div class="subheader text-center">What Needs Redesign</div>
+                    <p>The content, styling, visual heiarchy and organization needs more love and attention.</p>
+                    <p>One of the first things you notice is how text-heavy the website's content is. Despite being logical (read info to recieve info), there are better methods of delivery (video, images, infographics, etc.) which appeal to the modern web users.</p>
+                    <p>There was also some redundancy of information which fitted across two different pages. Overall, the information architecture and the organization of content needs to be reconsidered.</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
         </div>
     </section>
 
-    <!-- Approach Section -->
 
-    <section id="cs-bg-white">
-        <h5>Approach</h5>
+    <section class="bg-white">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="header-small text-center">Overview</div>
+                    <div class="header-large text-center">Project Planning</div>
+                    <p><strong>Timeline</strong>: September – November 2017</p>
+                    <p><strong>Client</strong>: University of Waterloo Badminton Club – a non-profit, student-run club</p>
+                    <p><strong>Links</strong>: <a href="https://invis.io/UTFFRKKKWF2">Final Prototype</a></p>
+                    <p class="list-header"><strong>High-level goals</strong>:</p>
+                    <ol>
+                        <li>Improve club's online presence which can be easily accessed by prospective members</li>
+                        <li>Provide easy to understand and engaging content for anybody to consume</li>
+                        <li>Attract future members and execs</li>
+                    </ol>
+                    <div class="subheader text-center">My Role</div>
+                    <p>I was responsible for project management and design for this project.</p>
+                    <p>This was an individual project which I took upon myself. As a former director of the club, I have a good understanding for the need of this project and strong connections within the club.</p>
+                    <p>I completed the project after drafting final mockups and putting together a developer handoff document.</p>
+
+                    <div class="subheader text-center">Approach</div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
             <div class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2">
                     <img src="/img/uwbc_casestudy/User%20Research%20Arrow.png" class="approach-process mx-auto d-block" alt="User Research">
-                    <div class="process-wrapper">
-                        <ul class="dash">
+                    <div class="wrap-list">
+                        <ul class="dash text-small">
                             <li>Questionnaires</li>
                             <li>User and Task Analysis</li>
                             <li>Goals</li>
@@ -117,8 +165,8 @@
                 </div>
                 <div class="col-lg-2">
                     <img src="/img/uwbc_casestudy/Ideation%20Arrow.png" class="approach-process mx-auto d-block" alt="Ideation">
-                    <div class="process-wrapper">
-                        <ul class="dash">
+                    <div class="wrap-list">
+                        <ul class="dash text-small">
                             <li>Card Sorting</li>
                             <li>Sitemaps</li>
                             <li>Sketching Features/Layouts</li>
@@ -127,8 +175,8 @@
                 </div>
                 <div class="col-lg-2">
                     <img src="/img/uwbc_casestudy/Wireframes%20&%20Mockups%20Arrow.png" class="approach-process mx-auto d-block" alt="Wireframes & Mockups">
-                    <div class="process-wrapper">
-                        <ul class="dash">
+                    <div class="wrap-list">
+                        <ul class="dash text-small">
                             <li>Pen and Paper</li>
                             <li>Sketch</li>
                             <li>Content</li>
@@ -137,8 +185,8 @@
                 </div>
                 <div class="col-lg-2">
                     <img src="/img/uwbc_casestudy/Usability%20Testing%20Arrow.png" class="approach-process mx-auto d-block" alt="Usability Testing">
-                    <div class="process-wrapper">
-                        <ul class="dash">
+                    <div class="wrap-list">
+                        <ul class="dash text-small">
                             <li>InVision</li>
                             <li>Task-Based Scenarios</li>
                             <li>Questionnaires</li>
@@ -147,8 +195,8 @@
                 </div>
                 <div class="col-lg-2">
                     <img src="/img/uwbc_casestudy/Final%20Design%20Arrow.png" class="approach-process mx-auto d-block" alt="Final Design">
-                    <div class="process-wrapper">
-                        <ul class="dash">
+                    <div class="wrap-list">
+                        <ul class="dash text-small">
                             <li>Expert Evaluation</li>
                             <li>High-Fidelity Mockups</li>
                             <li>Dev Handoff</li>
@@ -162,13 +210,14 @@
 
     <!-- User Research Section -->
 
-    <section id="cs-bg-grey">
-        <h5>User Research</h5>
+    <section class="bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>User Groups</h4>
+                    <div class="header-small">User Research</div>
+                    <div class="header-large">Understanding User Expectations </div>
+                    <div class="subheader">User Groups</div>
                     <ol>
                         <li><strong>New/Prospective Members</strong> – never been to the club before but wishes to learn 'how it works'</li>
                         <br>
@@ -180,63 +229,15 @@
                 <div class="col-lg-2"></div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/uwbc_casestudy/original_Home.png" alt="Original Home Page" class="mx-auto d-block">
-                    <p class="caption list-header">Home Page</p>
-                    <div class="process-wrapper">
-                        <ul class="dash">
-                            <li>
-                                quick links accessible on the right
-                            </li>
-                            <li>
-                                content in the middle looks condensed
-                            </li>
-                            <li>
-                                there are many links which draw attention
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/uwbc_casestudy/original_To%20Join.png" alt="Original To Join Page" class="mx-auto d-block">
-                    <p class="caption list-header">To Join Page</p>
-                    <div class="process-wrapper">
-                        <ul class="dash">
-                            <li>
-                                includes perks and things to know during session
-                            </li>
-                            <li>
-                                may be irrelevant for knowing how to join
-                            </li>
-                            <li>
-                                lots of text
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="img/uwbc_casestudy/original_Level%20Rubric.png" alt="Original Level Link" class="mx-auto d-block">
-                    <p class="caption list-header">Level Information Link</p>
-                    <div class="process-wrapper">
-                        <ul class="dash">
-                            <li>
-                                link to PDF instead of being directly on the page
-                            </li>
-                            <li>
-                                important enough to have a page of its own
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Questionnaire</h4>
-                    <p class="list-header">Created using Google Forms and consists of:</p>
+                    <div class="subheader">Questionnaire</div>
+                    <p class="list-header">Questions with reference to the original website:</p>
                     <ul class="dash">
+                        <li>Tasks</li>
                         <li>Likert scale questions regarding <strong>appearance</strong> and <strong>ease of navigation</strong></li>
                         <li>Likes</li>
                         <li>Dislikes</li>
@@ -249,7 +250,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Findings</h4>
+                    <div class="subheader">Findings</div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -257,9 +258,11 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/piechart-demographic.png" alt="Piechart Demographic" class="mx-auto d-block">
+                    <div class="figure-caption">User group demographics</div>
                 </div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/barchart-populartasks.png" alt="Bargraph Popular Tasks" class="mx-auto d-block">
+                    <div class="figure-caption">Most popular tasks</div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -267,26 +270,32 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/bargraph-appearance.png" alt="Bargraph Appearance" class="mx-auto d-block">
+                    <div class="figure-caption">Likert scale rating for 'Appearance'</div>
                 </div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/bargraph-easeofnavigation.png" alt="Bargraph Appearance" class="mx-auto d-block">
+                    <div class="figure-caption">Likert scale rating for 'Ease of Navigation'</div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
-                    <p class="highlight-uwbc list-header">Likes</p>
+
+                    <p class="highlight-green list-header">Likes</p>
                     <ul class="dash">
                         <li>"I could immediately see what times the next sessions were"</li>
                         <li>"Simple to use"</li>
-                        <li>"News feed is right on the homepage"</li>
+                        <li>"News feed is right on the home page"</li>
                         <li>"Has a familiar feel"</li>
                         <li>"Important information can be found on the right"</li>
                     </ul>
+
                 </div>
                 <div class="col-lg-4">
-                    <p class="highlight-uwbc list-header">Dislikes</p>
+
+                    <p class="highlight-red list-header">Dislikes</p>
                     <ul class="dash">
                         <li>"Looks cluttered"</li>
                         <li>"There are too many words"</li>
@@ -294,6 +303,7 @@
                         <li>"Very ugly and outdated"</li>
                         <li>"Too much going on to effectively determine where to focus attention"</li>
                     </ul>
+
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -301,7 +311,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>User Goals</h4>
+                    <div class="subheader">User Goals</div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -349,11 +359,11 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Project Goals</h4>
+                    <div class="subheader">Project Goals</div>
                     <ol>
                         <li>Update the website's aesthetics</li>
                         <li>Simplify the website's navigation; it should intuitive and easy to learn</li>
-                        <li>Accommodate different users' goals and tasks</li>
+                        <li>Accommodate the goals and tasks of all user groups</li>
                     </ol>
                 </div>
                 <div class="col-lg-2"></div>
@@ -363,26 +373,24 @@
 
     <!-- Ideation Section -->
 
-    <section id="cs-bg-white">
-        <h5>Ideation</h5>
+    <section class="bg-white">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Information Architecture</h4>
-                    <p>I used a card sorting technique to explore alternative sitemaps and sketched out various features to see how pages would look like with specific content.</p>
-                </div>
-                <div class="col-lg-2"></div>
-            </div>
-            <img src="img/uwbc_casestudy/Sitemap_original.png" alt="Sitemap Original" class="mx-auto d-block">
-            <p class="caption">Original Sitemap</p>
-            <img src="img/uwbc_casestudy/Sitemap_3.png" alt="Sitemap Version 3" class="mx-auto d-block">
-            <p class="caption">Revised Sitemap</p>
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8">
-                    <p>The original sitemap had a lot of options on the primary nav which can be overwhelming for new members.</p>
-                    <p>The revised sitemap added more depth with meaningful labels and a logical progression along the nav.</p>
+                    <div class="header-small">Ideation</div>
+                    <div class="header-large">Exploring Different Layouts</div>
+                    <div class="subheader">Information Architecture</div>
+                    <p>Looking at the original site and its sitemap, we can see that there are a lot of options on the primary nav which can be overwhelming for new members. The sitemap has a lot of breadth but its individual pages lack depth. The categorization of information should also be reconsidered.</p>
+                    <img src="img/uwbc_casestudy/Sitemap_original.png" alt="Sitemap Original" class="mx-auto d-block">
+                    <p class="figure-caption">Original Sitemap – Home page linking to 8 different pages</p>
+                    <p>I used card sorting as a tool for me to explore alternative sitemaps. I wrote down 'chunks' of content on cue cards and grouped them into logical groupings to define a form of hieracrchy.</p>
+                    <img src="img/uwbc_casestudy/Cardsort.png" alt="Card Sorting" class="img-fluid mx-auto d-block img-small">
+                    <div class="figure-caption">Cart sorting</div>
+                    <p>After formulating various sitemap configurations, I came to this particular version. This revised sitemap added more depth, meaningful labels, and a logical progression along the nav.</p>
+                    <img src="img/uwbc_casestudy/Sitemap_3.png" alt="Sitemap Version 3" class="mx-auto d-block">
+                    <p class="figure-caption">Revised Sitemap – Fewer pages and more depth of content</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -390,27 +398,34 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Sketches</h4>
-                    <p>Selected to showcase 3 of 7 pages (Home, How to Register, Skill Levels) from sketches to mockups.</p>
+                    <div class="subheader">Sketches</div>
+                    <p>After constructing a sitemap, I began to sketch specific layouts for individual pages. This was an easy way to visualize how the content would be organized and presented on each page.</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            <img src="img/uwbc_casestudy/Sketches.png" alt="Page Sketches" class="img-fluid mx-auto d-block">
+            <img src="img/uwbc_casestudy/Sketches.png" alt="Page Sketches" class="img-fluid mx-auto d-block img-small">
+            <div class="figure-caption">Sneak peak into my notebook showing the initial idea for the home page</div>
         </div>
     </section>
 
     <!-- Wireframe Section -->
 
-    <section id="cs-bg-grey">
-        <h5>Wireframes & Mockups</h5>
+    <section class="bg-grey">
         <div class="container">
-            <img src="img/uwbc_casestudy/Wireframe_content.png" alt="Wireframes" class="img-fluid mx-auto d-block">
-            <br>
-            <img src="img/uwbc_casestudy/Mockup_v1.png" alt="Mockups_v1" class="img-fluid mx-auto d-block">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p class="list-header">Feedback</p>
+                    <div class="header-small">Wireframes & Mockups</div>
+                    <div class="header-large">Paper to Digital</div>
+                    <p>The wireframes and mockups were all created using Sketch. As I recreated my ideas from paper to Sketch, I also recreated/created the content (copy, images, and illustrations) based off the original website. Creating a wireframe using with real copy allows me to better visualize the page layout.</p>
+                    <img src="img/uwbc_casestudy/Wireframe_content.png" alt="Wireframes" class="img-fluid mx-auto d-block">
+                    <div class="figure-caption">Wireframes for the home page (left), how to register page (middle), and skill levels page (right)</div>
+                    <br>
+                    <p>Utilizing my previous sketches, I created a few illustrations for some key content. UWBC does not have any branding guidelines so I chose to use a black and gold palette to align with the university's colours. This design also uses large hero background images and large local nav buttons at the top of the page to let users know what to expect.</p>
+                    <img src="img/uwbc_casestudy/Mockup_v1.png" alt="Mockups_v1" class="img-fluid mx-auto d-block">
+                    <div class="figure-caption">Inital mockups for the home page (left), how to register page (middle), and skill levels page (right)</div>
+                    <br>
+                    <p class="list-header">Initial feedback from devs and users:</p>
                     <ul class="dash">
                         <li>gold in the colour palette seems too corporate</li>
                         <li>'This Term' label needs to be more clear</li>
@@ -424,14 +439,15 @@
 
     <!-- Usability Testing -->
 
-    <section id="cs-bg-white">
-        <h5>Usability Testing</h5>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p>InVision was used to create a clickable prototype from the initial mockups. I wanted to evaluate how easy or difficult it was for users to find certain content.</p>
-                    <p class="list-header">Users were provided a scenario for a popular tasks. For example:</p>
+                    <div class="header-small">Usability Testing</div>
+                    <div class="header-large">What Works and what doesn't</div>
+                    <p>InVision was used to create a clickable prototype from the initial mockups. I wanted to evaluate how easy or difficult it was for users to find certain content (based on common tasks).</p>
+                    <p class="list-header">Users were provided a scenario. For example:</p>
                     <p>"You don't have any equipment and are unsure of what you're supposed to bring to session or what options you have. Where would you find more information about this?"</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -440,7 +456,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Protocol</h4>
+                    <div class="subheader">Protocol</div>
                     <ol>
                         <li>Present a brief outline of the test and permission to record</li>
                         <li>Have them fill out general participant information (to categorize into a user group)</li>
@@ -462,41 +478,46 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Metrics</h4>
+                    <div class="subheader">Metrics</div>
                     <p><strong>Duration</strong>: time to complete the task</p>
                     <p><strong>Number of Errors</strong>: number of times the user clicked to a different page or went in the opposite direction</p>
                     <p><strong>Ease</strong>: on a scale from 1 (very difficult) to 5 (very easy), the user was asked to rate the task upon completion</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
+            <p class="figure-caption">Usability test results for task-based scenarios – values are averaged from the number of participants who completed each task</p>
             <img src="img/uwbc_casestudy/Task%20Metric%20Table.png" alt="Usability Test Results Table" class="mx-auto d-block">
-            <p class="caption">Values are averaged from the number of participants who completed each task</p>
+            
 
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Findings</h4>
+                    <div class="subheader">Findings</div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
             <div class="row">
                 <img src="img/uwbc_casestudy/piechart-demographic-usability.png" alt="Piechart User Groups" class="mx-auto d-block">
             </div>
+            <div class="figure-caption">User group demographics</div>
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/bargraph-appearance-usability.png" alt="Bargraph Appearance Rating" class="mx-auto d-block">
+                    <div class="figure-caption">Likert scale ratings for 'Appearance'</div>
                 </div>
                 <div class="col-lg-4">
                     <img src="img/uwbc_casestudy/bargraph-easeofnavigation-usability.png" alt="Bargraph Ease of Nav Rating" class="mx-auto d-block">
+                    <div class="figure-caption">Likert scale ratings for 'Ease of Navigation'</div>
+                    <br>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4">
-                    <p class="highlight-uwbc list-header">Likes</p>
+                    <p class="highlight-green list-header">Likes</p>
                     <ul class="dash">
                         <li>"Clear menu"</li>
                         <li>"Easy to navigate and look for categories"</li>
@@ -505,7 +526,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <p class="highlight-uwbc list-header">Dislikes</p>
+                    <p class="highlight-red list-header">Dislikes</p>
                     <ul class="dash">
                         <li>"Might be easier for those who have been in the club before"</li>
                         <li>"Harder to navigate for specific things like challenge rules"</li>
@@ -518,7 +539,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <h4>Summary</h4>
+                    <div class="subheader">Summary</div>
                     <p>Users perform and think differently. Given the same task, individuals may take different approaches or have different mental models for web navigation.</p>
                     <p>The presented scenarios test users' abilities to find specific information, but some users consume information: by browsing without intentions of finding anything in particular.</p>
                     <p>There was an overall improvement compared to the original website based on 'appearance' and 'ease of navigation' which scored <strong>4.8</strong> and <strong>4.0</strong> on a 5-point Likert scale respectively (this can be compared to the baseline which scored <strong>2.4</strong> and <strong>3.3</strong> respectively).</p>
@@ -530,12 +551,13 @@
 
     <!-- Final Design Section -->
 
-    <section id="cs-bg-grey">
-        <h5>Final Design</h5>
+    <section class="bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <div class="header-small">Final Design</div>
+                   <div class="header-large">Mockup, Feedback, Repeat</div>
                     <p>I have decided to present just the Home page for the final iterations and the <a href="https://invis.io/UTFFRKKKWF2">Final InVision Prototype</a>.</p>
                     <p>Aside from the user feedback from testing, I also recieved some feedback from friends who work as product designers and web developers.</p>
                     <p>Although the initial prototype seemed to be an overall improvement from the original design, the usability test helped me understand what components still needed to addressed. This allowed me progress with further design iteration.</p>
@@ -546,14 +568,16 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="section-header highlight-uwbc">
-                        Version 2
+                    <div class="text-center">
+                        <strong>Version 2</strong>
                     </div>
                     <img src="img/uwbc_casestudy/Mockup_v2_home.png" alt="V1 Home Page" class="mx-auto d-block img-fluid">
+                    <div class="figure-caption">Iteration after usability testing and feedback</div>
+                    <br>
                     <div class="row">
                         <div class="col-lg-2"></div>
                         <div class="col-lg-8">
-                            <p class="list-header">Feedback</p>
+                            <p class="list-header">Summary of Feedback from Users and Professionals: </p>
                             <ul class="dash">
                                 <li>use white text on images (not blue) for readability</li>
                                 <li>use a scrim for the navigation bar</li>
@@ -563,15 +587,26 @@
                                 <li>add more padding to the top and bottom of each section</li>
                                 <li>CTA button labels should be clear to let users know exactly where it will lead to</li>
                             </ul>
+                            <br>
                         </div>
                         <div class="col-lg-2"></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="section-header highlight-uwbc">
-                        Version 3
+                    <div class="text-center">
+                        <strong>Version 3</strong>
                     </div>
                     <img src="img/uwbc_casestudy/Mockup_v3_home.png" alt="V3 Home Page" class="mx-auto d-block img-fluid">
+                    <div class="figure-caption">Latest iteration of design taking into account feedback</div>
+                    <br>
+                    <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                    <p>Product design is a never-ending process but I was quite content with this version and how much it evolved from my initial sketches.</p>
+                    <p>The mockup addresses the project goals of an updated look and navigation based on the usability testing results.</p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -579,14 +614,17 @@
 
     <!-- Reflection Section-->
 
-    <section id="cs-bg-white">
-        <h5>Reflection</h5>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p>Even though I mapped out my approach at the beginning of the project, putting everything into practice provided me with a rich learning experience. Feedback from both users and experts helped me understand what to consider and pay attention to when designing.</p>
+                   <div class="header-small">Conclusion</div>
+                   <div class="header-large">A few thoughts</div>
+                    
+                    <p>This project was a learning journey for me personally. It allowed me to practice skills like geurilla usability testing and prototyping for the first time. Reading about the design process is one thing but practising it priceless. The feedback from both users and experts also help me understand and see what to consider and pay attention to when designing.</p>
                     <p>I did a lot of learning on the job, particularly about: colour theory, what information architecture is, how to conduct usability tests, development feasibility, delivering a developer handoff, and much more. </p>
+                    <p>The final proposed design is currently in the development phase. I can't wait for user reactions and how it impacts the future of the club.</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -595,7 +633,7 @@
 
     <!-- CTA Section -->
 
-    <section id="cs-bg-white">
+    <section class="bg-white">
         <div class="container">
             <a href="index.html#projects">
                 <button class="button center-button">More Projects</button>

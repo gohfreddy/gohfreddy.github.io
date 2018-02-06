@@ -14,7 +14,7 @@ body{
 
 a, 
 a:hover{
-    color: #00AA8D;
+    color: #2980b9;
 }
 
 
@@ -29,7 +29,7 @@ a:hover{
     display: block;
     width: 0;
     height: 2px;
-    background: #00AA8D;
+    background: #2980b9;
     transition: width .3s;
 }
 
@@ -37,31 +37,33 @@ a:hover{
     width: 100%;
 }
 
-.list-header{
-    margin-bottom: 0;
-}
 
-/* Section Title */
-h1{
+
+/* ------------------------------------------------------ */
+/* TYPOGRAPHY */
+/* ------------------------------------------------------ */
+
+ /* Section Title */ 
+/* h1{
     font: 300, 2em, 'Open sans', sans-serif;
 }
 
-/* Subsection Title */
+Subsection Title
 h2{
     font: 500, 1.5em, 'Open sans', sans-serif;
 }
 
-/* Body Heading */
+Body Heading
 h3{
     font: 600, 1.25em, 'Open sans', sans-serif
 }
 
-/* Body Subheading */ 
+Body Subheading 
 h4{ 
     font: 300, 1.2em, 'Open sans', sans-serif;
 }
 
-/* Section Intro */
+Section Intro
 h5{
     font: 300, 0.75em, 'Open sans', sans-serif;
     text-transform: uppercase;
@@ -69,29 +71,134 @@ h5{
     color: #4C4C4C;
     text-align: center;
     margin-bottom: 3em;
+} */
+
+/* Alignment */
+.text-center{
+    text-align: center; /* Default is left-align */ 
+}
+
+/* Sizing */
+.text-small{
+    font-size: 0.9em; 
 }
 
 /* Body Text */
 p{
     font: 300, 1em, 'Open sans', sans-serif;
     color: #4C4C4C;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5em; /* Adding bottom margin */
 }
 
-/* TEXT COLOURS */
-.highlight{
-    color: #00AA8D;
+.project-title{
+    font-family: 'Open sans', sans-serif;
+    font-size: 2.5em;
     font-weight: 600;
+    color: #F3F5F6;
+}
+
+.header-small{
+    font-family: 'Anton', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.header-large{
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+.subheader{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 2em 0 1em;
+}
+
+.figure-caption{
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.quote{
+    margin: 3em;
+    color: #888;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------ */
+/* TEXT COLOURS */
+/* ------------------------------------------------------ */
+
+.highlight{
+    color: #2980b9; /* Portfolio default theme colour */
 }
 
 .text-faded{
-    color: #BBB;
+    color: #BBB; /* Grey */
 }
+
+.text-light{
+    color: #F3F5F6;
+}
+
+.highlight-red{
+    color: red;
+}
+
+.highlight-green{
+    color: green;
+}
+
+/* ------------------------------------------------------ */
+/* LISTS */
+/* ------------------------------------------------------ */
+
+.list-header{
+    margin-bottom: 0; /* So there is no spacing between header and the list */ 
+}
+
+.wrap-list{
+    text-align: center;
+}
+
+.wrap-list ul{
+    text-align: left;
+    display:-moz-inline-stack;
+    display:inline-block;
+    zoom:1;
+}
+
+
+.dash{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+.dash li:before{
+    display: inline-block;
+    content: "–";
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* ------------------------------------------------------ */
+/* BUTTONS */
+/* ------------------------------------------------------ */
 
 .button{
     /* Button Box */
     background-color: #FFF;
-    border: 2px solid #00AA8D;
+    border: 2px solid #2980b9;
     padding: 0 2em;
     border-radius: 5px;
     text-decoration: none;
@@ -101,7 +208,7 @@ p{
     /* Button Text */
     text-transform: uppercase;
     font-weight: 600;
-    color: #00AA8D;
+    color: #2980b9;
     font-size: 0.8em;
     letter-spacing: 0.6px;
     
@@ -109,7 +216,7 @@ p{
 }
 
 .button:hover{
-    background-color: #00AA8D;
+    background-color: #2980b9;
     color: #FFF;
     cursor: pointer;
 }
@@ -128,7 +235,7 @@ p{
 /* ------------------------------------------------------ */
 
 nav{
-    border-top: #00AA8D 5px solid;
+    border-top: #2980b9 5px solid;
     width: 100%;
     height: auto;
     background-color: #FFF;
@@ -150,7 +257,7 @@ nav ul li{
 }
 
 .navbar-nav.ml-auto li.nav-item a.nav-link:hover{
-    color: #00AA8D;
+    color: #2980b9;
 }
 
 
@@ -174,7 +281,7 @@ nav ul li{
 /* ------------------------------------------------------ */
 
 footer{
-    border-top: #00AA8D 5px solid;
+    border-top: #2980b9 5px solid;
     background-color: #FFF;
     padding: 4em;
 }
@@ -198,7 +305,7 @@ footer{
 }
 
 .footer-links ul li a:hover {
-    color: #00AA8D;
+    color: #2980b9;
     padding: 2em;
 }
 
@@ -381,18 +488,6 @@ a .card-link{
     margin: 2em 0;
 }
 
-.dash{
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1em;
-}
-
-.dash li:before{
-    display: inline-block;
-    content: "–";
-    width: 1em;
-    margin-left: -1em;
-}
 
 /* .revealed-panel:hover ~ .hidden-panel{
 
@@ -447,16 +542,6 @@ a .card-link{
 /* REACH CASE STUDY PAGE */ 
 /* ------------------------------------------------------ */
 
-/* ------------------------------------------------------ */
-/* SECTION HEADER */
-/* ------------------------------------------------------ */
-
-.section-header{
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.1em;
-    margin: 2em 0 1em;
-}
 
 /* ------------------------------------------------------ */
 /* COLOURS */
@@ -466,13 +551,27 @@ a .card-link{
   color: #C0392B;  
 } 
 
+.bg-uwbc{
+    background-color: #C0392B;
+}
+
 .highlight-reach{
   color: #00AA8D;  
 } 
 
+.bg-reach{
+    background-color: #00AA8D;
+}
+
 .highlight-ers{
   color: #F5A623;  
 } 
+
+.bg-reach{
+    background-color: #F5A623;
+}
+
+
 
 /* ------------------------------------------------------ */
 /* CLASSES */
@@ -491,26 +590,6 @@ a .card-link{
     margin-bottom: 1em;
 }
 
-.process-wrapper{
-    text-align: center;
-}
-
-.process-wrapper ul{
-    text-align: left;
-    display:-moz-inline-stack;
-    display:inline-block;
-    zoom:1;
-}
-
-.process-wrapper li{
-    font-size: 0.9em;
-}
-
-.caption{
-    display: block;
-    text-align: center;
-    font-weight: 600;
-}
 
 .limit-img-50{
     max-width: 50%;
@@ -522,27 +601,25 @@ a .card-link{
     height: auto;
 }
 
-.quote{
-    margin: 3em;
-    color: #888;s
-    font-weight: 300;
-    text-align: center;
+.img-small{
+    width: 300px;
 }
+
 
 /* ------------------------------------------------------ */
 /* GREY BACKGROUND SECTION */
 /* ------------------------------------------------------ */
 
-#cs-bg-grey{
+.bg-grey{
     padding: 5em 0;
     background-color: #FAFAFA;
 }
 
-#cs-bg-grey h4{
+.bg-grey h4{
     margin: 2em 0;
 }
 
-#cs-bg-grey img{
+.bg-grey img{
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
@@ -552,16 +629,16 @@ a .card-link{
 /* WHITE BACKGROUND SECTION */
 /* ------------------------------------------------------ */
 
-#cs-bg-white{
+.bg-white{
     padding: 5em 0;
     background-color: #FFF;
 }
 
-#cs-bg-white h4{
+.bg-white h4{
     margin: 2em 0;
 }
 
-#cs-bg-white img{
+.bg-white img{
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;

@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113022205-1"></script>
@@ -38,7 +40,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
             <div class="container">
                 <div class="navbar-brand">
-                    <a href="index.html"><img src="/img/LogoFlat.svg" alt="FG" class="logo"></a>
+                    <a href="index.html"><img src="/img/LogoFlat_light.svg" alt="FG" class="logo"></a>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -58,14 +60,12 @@
 
     <section id="cs-intro">
         <div class="jumbotron jumbotron-fluid">
+            <div class="project-title text-center highlight-ers">UWBC Exec Recognition System</div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <h1>UWBC Exec Recognition System</h1>
-                        <h4><small>Sep – Nov 2017</small></h4>
-                        <br>
-                        <p>University of Waterloo Badminton Club (UWBC) depends on its execs to maintain operations and service to the general members. Exec retention rates have declined which poses a problem towards sustaining the club in the future.</p>
+                        <p class="text-center">University of Waterloo Badminton Club (UWBC) depends on its execs to maintain operations and service for the general members. Exec retention rates have experienced a slight decline which poses a future problem in sustaining the club from a management perspective.</p>
                         <img src="/img/UWBC_ERSPreview.png" alt="Mockups" class="mockups mx-auto d-block">
                     </div>
                     <div class="col-lg-2"></div>
@@ -74,61 +74,41 @@
         </div>
     </section>
 
-    <!-- Overview Section -->
-
-    <section id="cs-bg-grey">
-        <h5>Overview</h5>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-8">
-                    <p><strong>Problem</strong>: Fewer execs are returning to the club. Execs typically help with setup, cleanup, arranging games, and handling member requests during session. We traditionally compensate execs with: shirts, social events, food, and an end-of-term dinner. The exec role is a volunteer position, which can be repetitive and thankless. This could very well be the reason why fewer execs choose to return.</p>
-                    <br>
-                    <p><strong>Client</strong>: University of Waterloo Badminton Club – a non-profit, student-run club</p>
-                    <br>
-                    <p><strong>Role</strong>: Concept and graphic design, logistics management</p>
-                    <br>
-                    <p><strong>Note</strong>: I was a director of the club at the time and I took on this project on my own accord to investigate and explore a real issue.</p>
-                    <br>
-                    <p><strong>Links</strong>: <a href="http://www.badmintonclub.uwaterloo.ca/staff/Winter%202017/teams.html">Leaderboard</a></p>
-                    <br>
-                </div>
-                <div class="col-lg-2"></div>
-            </div>
-        </div>
-    </section>
-
     <!-- Problem Section -->
 
-    <section id="cs-bg-white">
-        <h5>The Problem</h5>
+    <section class="bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <p>A 'term' refers to school term which reoccur every 4 months. Every year, there are three terms (Winter, Spring, Fall). The badminton club operates every term and therefore hires a new exec team (approximately 20 execs and 5 directors), and registers a new set of members (up to 300 members) every term.</p>
-                    <p class="list-header">Analyzing exec data from 2010 to 2016 inclusive: </p>
+                    <div class="header-small text-center">The Problem</div>
+                    <div class="header-large text-center">On the Decline</div>
+                    <p>A 'term' refers to school term which reoccur every 4 months. Every year, there are three terms (Winter, Spring, Fall). The badminton club operates every term and therefore registers a new set of members (up to 300 members) and hires a new exec team (approximately 20 execs and 5 directors) every term.</p>
+                    <p>In short, fewer execs are returning to the club. Execs typically help with setup, cleanup, arranging games, and handling member requests during session; are traditionally compensated  with: shirts, social events, food, and an end-of-term dinner. This position is completely voluntary.</p>
+                    <div class="subheader text-center">Digging into some data</div>
+                    <p>The presented data is based off all the consecutive executive rosters available (terms from 2010 to 2016). </p>
+                    <img src="img/uwbc_ers_casestudy/TermsServedGraph_vector.png" alt="Terms of Service Graph" class="mx-auto d-block img-fluid">
+                    <p class="figure-caption">Number of terms of service per exec from 2010 to 2016</p>
+                    <img src="img/uwbc_ers_casestudy/RetentionGraph_vector.png" alt="Retention Rate Graph" class="mx-auto d-block img-fluid">
+                    <p class="figure-caption">Year-to-year retention rates calculated by taking the ratio of returning execs and total execs in year x and year x+1</p>
+                    <p class="list-header">Key Points:</p>
                     <ul class="dash">
                         <li>209 unique execs were hired</li>
                         <li>an exec serves for an average of 2.26 terms</li>
                         <li>94 of 209 (45%) execs who served the club, only did so for 1 term</li>
                         <li>the retention rate from 2015 to 2016 was 18.2% where only 14 execs returned out of a total of 77 execs</li>
                     </ul>
-                    <img src="img/uwbc_ers_casestudy/TermsServedGraph_vector.png" alt="Terms of Service Graph" class="mx-auto d-block img-fluid">
-                    <p class="caption">Number of terms of service per exec from 2010 to 2016</p>
-                    <img src="img/uwbc_ers_casestudy/RetentionGraph_vector.png" alt="Retention Rate Graph" class="mx-auto d-block img-fluid">
-                    <p class="caption">Year-to-year retention rates calculated by taking the ratio of returning execs and total execs in year x and year x+1</p>
-                    <p class="list-header">It is likely that the execs who did not return: </p>
-                    <ul class="dash">
-                        <li>did not have a great experience</li>
-                        <li>lost interest in the club</li>
-                        <li>had a difficult time balancing the exec position with school</li>
-                    </ul>
-                    <p class="list-header">Other reasons may include: </p>
-                    <ul class="dash">
-                        <li>termination due to poor performance</li>
-                        <li>graduation/completion of school</li> <li>promotion to a director position</li>
-                    </ul>
+                    <div class="subheader text-center">Speculating Cause</div>
+                    <div class="wrap-list">
+                        <ul class="dash">
+                            <li>did not have a great experience</li>
+                            <li>lost interest in the club</li>
+                            <li>difficulties balancing exec duties with school</li>
+                            <li>termination due to poor performance</li>
+                            <li>graduation/completion of school</li>
+                            <li>promotion to a director position</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -136,17 +116,45 @@
         </div>
     </section>
 
-    <!-- Pilot -->
+    <!-- Overview Section -->
 
-    <section id="cs-bg-grey">
-        <h5>Pilot</h5>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                    <div class="header-small text-center">Overview</div>
+                    <div class="header-large text-center">Project Planning</div>
+                    <p><strong>Timeline</strong>: September – November 2017</p>
+                    <p><strong>Client</strong>: University of Waterloo Badminton Club – a non-profit, student-run club</p>
+                    <p><strong>Links</strong>: <a href="http://www.badmintonclub.uwaterloo.ca/staff/Winter%202017/teams.html">Leaderboard</a></p>
+                    <div class="list-header"><strong>High-level goals</strong>:</div>
+                    <ol>
+                        <li>Renew the interest for current and future exec members to continue with UWBC</li>
+                        <li>Improve the bond between the entire exec team</li>
+                        <li>Make it fun and enjoyable for execs to perform their duties</li>
+                    </ol>
+                    <div class="subheader text-center">My Role</div>
+                    <p>I was responsible for concept, graphic design, and managing general logistics. This project was mainly individual, but I had help from the rest of the director team to help with recording scores and uploading new profile cards on the leaderboard.</p>
+                    <p>I was a director of the club at the time and I took on this project on my own accord to investigate and explore a real issue.</p>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilot -->
+
+    <section class="bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                   <div class="header-small">Pilot</div>
+                   <div class="header-large">The First Attempt</div>
                     <p>A pilot was performed in the previous term (Fall 2016). Execs were split into teams and were assigned points for any positive actions throughout the term. This was meant to be fun and slightly competitive to motivate execs (original concept comes from point assignments to different houses in Harry Potter).</p>
                     <img src="img/uwbc_ers_casestudy/Pilot_Leaderboard.png" alt="Pilot Leaderboard" class="mx-auto d-block img-fluid">
-                    <p class="caption">Leaderboard from Fall 2016 Term</p>
+                    <p class="figure-caption">Leaderboard from Fall 2016 Term</p>
                     <p>This system promoted teamwork and was a good 'excuse' to recognize and reward good behaviour. The major issue was the lack of a meaningful scoring system since any director could award points to any exec for practically any reason. It was subjective and bias.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -156,12 +164,13 @@
 
     <!-- How it Works Section -->
 
-    <section id="cs-bg-white">
-        <h5>Exec Recognition System</h5>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <div class="header-small">How does it work</div>
+                   <div class="header-large">Exec Recognition System</div>
                     <p>The term after (Winter 2017), I proposed a revised system, the Exec Recognition System (ERS). This time, teams would know exactly how they could earn points.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -171,25 +180,27 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Teams</h4>
-                    <p>Teams were balanced based on gender and exec experience. </p>
+                    <div class="subheader">Teams</div>
+                     <p>Teams were balanced based on gender and exec experience. </p>
                     <p>Teams created their own team name and logo they would represent for the term. The final logos were based on each team's submitted sketch.</p>
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-12 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Keguri.png" alt="Keguri Logo" class="img-fluid mx-auto d-block">
-                    <p class="caption">Finalized logo for team Keguri</p>
+                    <p class="figure-caption">Finalized logo for team Keguri</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Points</h4>
-                    <p>Point entry was done through Google Forms with dropdown menus for exec name, denomination of points, and category (explained in the next section). Lastly, a note must be made describing the exec's actions.</p>
+                    <div class="subheader">Points</div>
+                    <p>Point entry was done using a Google Form with dropdown menus for exec name, denomination of points, and category (explained in the next section). Lastly, a note must be made describing the exec's actions.</p>
                     <img src="img/uwbc_ers_casestudy/ERSform.png" alt="ERS Form" class="mx-auto d-block img-fluid">
+                    <div class="figure-caption">Form used for point entry</div>
+                    <br>
                     <p>All directors were allowed to use this form to enter points and I reviewed the responses regularly to delete any duplicate entries.</p>
-                    <p>Example Entry: "Anna – 5 points – Initiative – First exec to help cleanup"</p>
+                    <p>Example Entry: "Anna • 5 points • Initiative • First exec to help cleanup"</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
@@ -197,7 +208,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Categories</h4>
+                    <div class="subheader">Categories</div>
                     <p>Point categories help execs understand <strong>how</strong> they can earn points for their team. Different categories are represented by badges which can be earned.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -206,33 +217,23 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-2 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Creativity_Gold_4.png" alt="Creativity Badge" class="mx-auto d-block">
-                    <div class="process-wrapper">
-                        <p>Creativity</p>
-                    </div>
+                    <div class="figure-caption">Creativity</div>
                 </div>
                 <div class="col-md-2 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Enthusiasm_Gold.png" alt="Enthusiasm Badge" class="mx-auto d-block">
-                    <div class="process-wrapper">
-                        <p>Enthusiasm</p>
-                    </div>
+                    <div class="figure-caption">Enthusiasm</div>
                 </div>
                 <div class="col-md-2 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Event%20Helper_Gold.png" alt="Event Helper Badge" class="mx-auto d-block">
-                    <div class="process-wrapper">
-                        <p>Event Helper</p>
-                    </div>
+                    <div class="figure-caption">Event Helper</div>
                 </div>
                 <div class="col-md-2 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Mentoring_Gold.png" alt="Mentoring Badge" class="mx-auto d-block">
-                    <div class="process-wrapper">
-                        <p>Mentoring</p>
-                    </div>
+                    <div class="figure-caption">Mentoring</div>
                 </div>
                 <div class="col-md-2 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Initiative_Gold.png" alt="Initiative Badge" class="mx-auto d-block">
-                    <div class="process-wrapper">
-                        <p>Initiative</p>
-                    </div>
+                    <div class="figure-caption">Initiative</div>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -240,12 +241,14 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Badges</h4>
+                    <div class="subheader">Badges</div>
                     <p>Badges encourage specific behaviour by having achievements for teams to complete (to unlock/upgrade badges).</p>
                 </div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-12 ">
                     <img src="img/uwbc_ers_casestudy/Badge%20Anatomy.png" alt="Badge Anatomy" class="d-block mx-auto img-fluid">
+                    <div class="figure-caption">Explaining the different parts of the badge</div>
+                    <br>
                 </div>
             </div>
             <div class="row">
@@ -256,41 +259,47 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-12 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Medals.png" alt="Badge Medals" class="d-block mx-auto img-fluid">
+                    <div class="figure-caption">Bronze, silver and gold medals which can be attached to the badge</div>
+                    <br>
                 </div>
                 <div class="col-lg-12 limit-img-50 mx-auto">
                     <img src="img/uwbc_ers_casestudy/Placements.png" alt="Badge Placements" class="d-block mx-auto img-fluid">
+                    <div class="figure-caption">Placeholders to explain how teams can earn the next badge or medal</div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Competition Badge</h4>
+                    <div class="subheader">Competition Badge</div>
                     <p>Exec socials turned into competitive events where they compete to earn a special badge and points.</p>
                     <p>For this particular term, I organized a relay race and a game show. In the previous term, I organized a pumpkin carving contest and a multi-station challenge.</p>
-                </div>
+                    <div class="col-lg-12 limit-img-50 mx-auto">
+                        <img src="img/uwbc_ers_casestudy/Competition_1st_relayrace.png" alt="Competition Badge" class="d-block mx-auto img-fluid">
+                        <p class="figure-caption">Badge for winning 3rd place in the relay race</p>
+                    </div>
+                    </div>
                 <div class="col-lg-2"></div>
-                <div class="col-lg-12 limit-img-25 mx-auto">
-                    <img src="img/uwbc_ers_casestudy/Competition_1st_relayrace.png" alt="Competition Badge" class="d-block mx-auto img-fluid">
-                </div>
+                
             </div>
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Leaderboard</h4>
-                    <p>This dispalys the team rankings and team profile cards. This was updated every 3-4 weeks.</p>
+                    <div class="subheader">Leaderboard</div>
+                    <p>This displays the team rankings and team profile cards. This was updated every 3-4 weeks.</p>
                     <p>Profile card contained: team rank, logo, roster, total points, and badges earned. This helped teams visualize their collective achievements and progress.</p>
+                    <img src="img/uwbc_ers_casestudy/Template.png" alt="Template Profile Card" class="mx-auto d-block img-fluid">
+                    <p class="figure-caption">Team profile card template</p>
                 </div>
                 <div class="col-lg-2"></div>
             </div>
-            <img src="img/uwbc_ers_casestudy/Template.png" alt="Template Profile Card" class="mx-auto d-block img-fluid">
-            <p class="caption">Profile Card Template</p>
+            
 
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Rewards</h4>
+                    <div class="subheader">Rewards</div>
                     <p><strong>Mid-Term</strong>: The highest point earners from each team was treated to bubble tea.</p>
                     <p><strong>End-of-Term</strong>: The winning team was rewarded an all-expenses paid team dinner.</p>
                 </div>
@@ -303,12 +312,13 @@
 
     <!-- Final Design Section -->
 
-    <section id="cs-bg-grey">
-        <h5>Evaluation</h5>
+    <section class="bg-grey">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <div class="header-small">Evaluation</div>
+                   <div class="header-large">What Execs Thought</div>
                     <p>The final team standings and leaderboard are hosted <a href="http://www.badmintonclub.uwaterloo.ca/staff/Winter%202017/teams.html">here</a>. We also collected exec feedback on the ERS using an anonymous survey.</p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -317,7 +327,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Feedback</h4>
+                    <div class="subheader">Feedback</div>
                     <p class="quote">"I liked it, it allowed us to really bond with the people in my group and the team challenges were a lot of fun."</p>
                     <p class="quote">"I thought this made this term far more interesting and allowed me to get to know some other execs better, especially within my team/house... It's kind of like being in o-week teams again, except we have a lot of time to get to know each other. So yes, I would totally love to see this happen again."</p>
                     <p class="quote">"...it motivates execs to help out more which makes session more efficient. Also, it helps new execs feel like they're part of a group because it may be hard to make friends in a large group."</p>
@@ -329,11 +339,11 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                   <h4>Summary</h4>
+                    <div class="subheader">Summary</div>
                     <p>Does the exec recognition system (ERS) solve the problem?</p>
                     <p>Does the ERS address exec retention by recognizing and appreciating execs for their efforts?</p>
                     <img src="img/uwbc_ers_casestudy/RetentionGraph_vector_2017.png" alt="Updated Retention Graph" class="mx-auto d-block img-fluid">
-                    <p class="caption">Retention Rate graph updated with 2016 to 2017 data</p>
+                     <p class="figure-caption">Year-to-year retention rates (includes 2016 to 2017 exec data)</p>
                     <p>Between 2016 and 2017, there was a high of 36.2% retention. Recurring interest in the club exec positon increased, but it would be impossible to say that it was a product of the ERS. </p>
                     <p>After this experiment, I can say that exec appreciation and recognition goes beyond points, badges, and leaderboards (PBL). The PBL was a fun way to quantitatively track individual exec performance, provide more opportunities to host fun/competitive events, and give out rewards.</p>
                     <p class="list-header">Important components of this system includes:</p>
@@ -351,12 +361,13 @@
 
     <!-- Reflection Section-->
 
-    <section id="cs-bg-white">
-        <h5>Reflection</h5>
+    <section class="bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
+                   <div class="header-small">Conclusion</div>
+                   <div class="header-large">Last Thoughts</div>
                     <p>One <strong>limitation</strong> during the research phase was the ability to diagnose the real reason execs had for discontinuing their service with the available data. It would have been nice to complete exit interviews or start doing exit interviews with execs.</p>
                     <p>Logistically, other directors mentioned that it was extra effort for them to update points and maintain a system like ERS on top of regular club operations.</p>
                     <p>The successful components of ERS include: teams, organized exec events, rewards, and feedback. The sense of being a part of a team allow new execs to have a support system to fall upon. Organized exec events should encourage teamwork. Rewards and verbal feedback are also important elements to reassure execs that they are valued. I am not sure how these components will work without PBLs but I look forward to the future of UWBC.</p>
@@ -368,7 +379,7 @@
 
     <!-- CTA Section -->
 
-    <section id="cs-bg-white">
+    <section class="bg-white">
         <div class="container">
             <a href="index.html#projects">
                 <button class="button center-button">More Projects</button>
