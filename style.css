@@ -94,7 +94,8 @@ p{
     font-family: 'Open sans', sans-serif;
     font-size: 2.5em;
     font-weight: 600;
-    color: #F3F5F6;
+    color: #AAA;
+    margin: 0 0 1em;
 }
 
 .header-small{
@@ -143,7 +144,7 @@ p{
 }
 
 .text-faded{
-    color: #BBB; /* Grey */
+    color: #AAA; /* Grey */
 }
 
 .text-light{
@@ -348,22 +349,24 @@ footer{
 }
 
 .card{
-    margin: 0 auto 5em;
+    margin: 0 auto 2em;
+    padding: 1em;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.16), 0 2px 4px rgba(0,0,0,0.23); /* Level 2 drop shadow - adjusted */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* Level 2 drop shadow - adjusted */
     overflow: hidden;
 }
 
 .card:hover{
     cursor: pointer;
     text-decoration: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: box-shadow .2s ease-in;
 }
 
 .card-body{
+    padding: 1em;
     text-align: center;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 a .card-link{
@@ -375,83 +378,46 @@ a .card-link{
     text-decoration: none; /* Link doesn't get underlines */
     z-index: 10; /* Raise anchor tag above anything else
     Workaround to make clickable in IE */
-    background-color: #FFF;
     opacity: 0;
     filter: alpha(opacity=0);
 }
 
 .card-title{
     font-weight: 700;
-    color: #FFF;
+    color: #4C4C4C;
     margin-bottom: 1em;
 }
 
 .card-text{
-    color: #FFF; /* Set colours to override link defaults*/
+    color: #4C4C4C; /* Set colours to override link defaults*/
 }
 
-.card-img{
-    width: auto;
-    height: 100%;
-    padding: 2em 0;
-    /* Ensures image is in the middle and cropped */
-    text-align: center;
-    overflow: hidden;   
+.card-img-top{
+    max-width: 300px;
+    height: auto;
+    padding: 2em 0;  
 }
 
-/* Create Overlay Colours Based on Project Colours */
-/* Difference between overlays is the background color */ 
-
-/* uwbc = #C0392B */
-.overlay-uwbc{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .4s ease-in-out;
-    background-color: #C0392B;
-}
-.card:hover .overlay-uwbc{
-    opacity: 0.95;
+.card-tag{
+    list-style: none;
+    padding: 0;
 }
 
-/* reach+ = #00AA8D */
-.overlay-reach{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .4s ease-in-out;
-    background-color: #00AA8D;
-}
-.card:hover .overlay-reach{
-    opacity: 0.95;
+.card-tag li{
+    display: inline;
+    background-color: #BBB;
+    margin: 0.25em;
+    padding: 0.5em 1em;
+    color: #FFF;
+    border-radius: 10px;
+    font-size: 0.75em;
 }
 
-/* uwbc-ers = #F5A623 */
-.overlay-uwbc-ers{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .4s ease-in-out;
-    background-color: #F5A623;
+.table{
+    display: table;
+    margin: 0 auto;
 }
-.card:hover .overlay-uwbc-ers{
-    opacity: 0.95;
-}
+
 
 
 /* ------------------------------------------------------ */
@@ -478,34 +444,23 @@ a .card-link{
     background-color: #FFF;
 }
 
-.background-feature{
-    max-width: 80%;
-    height: auto;
-}
 
-
-.feature-block{
-    margin: 2em 0;
-}
-
-
-/* .revealed-panel:hover ~ .hidden-panel{
-
-    opacity: 1;
-    height: auto;
-}
-
-.hidden-panel{
-
-    color: #777;
-    height: 0;
-    opacity: 0;
+.f-card{
+    margin: 1em 0 0;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 1px rgba(0,0,0,0.2); 
     overflow: hidden;
-    transition: opacity 0.3s ease-in;
 }
- */
-.hidden-panel{
-    font-size: 0.9em;
+
+.f-card-body{
+    color: #4C4C4C;
+}
+
+.f-card-img{
+    width: auto;
+    height: 100%;
+    overflow: hidden;   
 }
 
 
