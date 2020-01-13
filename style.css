@@ -1,7 +1,10 @@
 /* ------------------------------------------------------ */
+
 /* CORE STYLES */
+
 /* ------------------------------------------------------ */
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
@@ -12,14 +15,15 @@ body{
     color: #4C4C4C;
 }
 
-a, 
-a:hover{
+a,
+a:hover {
     color: #2980b9;
 }
 
 
 /* Link Underline Animation */
-.nav-link{
+
+.nav-link {
     display: inline-block;
     text-decoration: none;
 }
@@ -33,17 +37,20 @@ a:hover{
     transition: width .3s;
 }
 
-.nav-link:hover::after{
+.nav-link:hover::after {
     width: 100%;
 }
 
 
 
 /* ------------------------------------------------------ */
+
 /* TYPOGRAPHY */
+
 /* ------------------------------------------------------ */
 
- /* Section Title */ 
+/* Section Title */
+
 /* h1{
     font: 300, 2em, 'Open sans', sans-serif;
 }
@@ -74,59 +81,82 @@ h5{
 } */
 
 /* Alignment */
-.text-center{
-    text-align: center; /* Default is left-align */ 
+
+.text-center {
+    text-align: center;
+    /* Default is left-align */
 }
 
 /* Sizing */
-.text-small{
-    font-size: 0.9em; 
+
+.text-small {
+    font-size: 0.9em;
 }
 
 /* Body Text */
-p{
+
+p {
     font: 300, 1em, 'Open sans', sans-serif;
     color: #4C4C4C;
-    margin-bottom: 1.5em; /* Adding bottom margin */
+    margin-bottom: 1.5em;
+    /* Adding bottom margin */
 }
 
-.project-title{
+.project-title {
     font-family: 'Open sans', sans-serif;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 600;
     color: #AAA;
     margin: 0 0 1em;
 }
 
-.header-small{
-    font-family: 'Anton', sans-serif;
+.about-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.about-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.25em;
+    color: #AAA;
+    margin: 1em 0 2em;
+}
+
+.header-small {
+    font-family: 'Open sans', sans-serif;
     font-size: 1em;
+    font-weight: 700;
     text-transform: uppercase;
     margin-top: 1em;
 }
 
-.header-large{
-    font-family: 'Anton', sans-serif;
+.header-large {
+    font-family: 'Open sans', sans-serif;
     font-size: 2em;
-    text-transform: uppercase;
+    font-weight: 600;
     margin-bottom: 1em;
 }
 
-.subheader{
-    font-family: 'Anton', sans-serif;
+.subheader {
+    font-family: 'Open sans', sans-serif;
     font-size: 1.5em;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 2em 0 1em;
 }
 
-.figure-caption{
+.figure-caption {
     display: block;
     text-align: center;
     font-size: 0.9em;
     font-style: italic;
 }
 
-.quote{
+.quote {
     margin: 3em;
     color: #888;
     font-weight: 300;
@@ -135,57 +165,88 @@ p{
 }
 
 
+/* SECTION DIVIDER */
+
+.section-divider {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.dot1,
+.dot2,
+.dot3 {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 30%;
+    background-color: black;
+}
+
+.dot1,
+.dot2 {
+    margin-right: 30px;
+}
+
+
 /* ------------------------------------------------------ */
+
 /* TEXT COLOURS */
+
 /* ------------------------------------------------------ */
 
-.highlight{
-    color: #2980b9; /* Portfolio default theme colour */
+.highlight {
+    color: #2980b9;
+    /* Portfolio default theme colour */
 }
 
-.text-faded{
-    color: #AAA; /* Grey */
+.text-faded {
+    color: #AAA;
+    /* Grey */
 }
 
-.text-light{
+.text-light {
     color: #F3F5F6;
 }
 
-.highlight-red{
+.highlight-red {
     color: red;
 }
 
-.highlight-green{
+.highlight-green {
     color: green;
 }
 
 /* ------------------------------------------------------ */
+
 /* LISTS */
+
 /* ------------------------------------------------------ */
 
-.list-header{
-    margin-bottom: 0; /* So there is no spacing between header and the list */ 
+.list-header {
+    margin-bottom: 0;
+    /* So there is no spacing between header and the list */
 }
 
-.wrap-list{
+.wrap-list {
     text-align: center;
 }
 
-.wrap-list ul{
+.wrap-list ul {
     text-align: left;
-    display:-moz-inline-stack;
-    display:inline-block;
-    zoom:1;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
 }
 
 
-.dash{
+.dash {
     list-style: none;
     margin-left: 0;
     padding-left: 1em;
 }
 
-.dash li:before{
+.dash li:before {
     display: inline-block;
     content: "–";
     width: 1em;
@@ -193,84 +254,92 @@ p{
 }
 
 /* ------------------------------------------------------ */
+
 /* BUTTONS */
+
 /* ------------------------------------------------------ */
 
-.button{
+.button {
     /* Button Box */
     background-color: #FFF;
     border: 2px solid #2980b9;
     padding: 0 2em;
-    border-radius: 5px;
+    border-radius: 24px;
     text-decoration: none;
     height: 48px;
     margin: 0 auto;
-    
+
     /* Button Text */
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     color: #2980b9;
     font-size: 0.8em;
     letter-spacing: 0.6px;
-    
+
     transition: all 0.25s;
 }
 
-.button:hover{
+.button:hover {
     background-color: #2980b9;
     color: #FFF;
     cursor: pointer;
 }
 
-.center-button{
+.center-button {
     display: flex;
     justify-content: center;
 }
 
 /* ------------------------------------------------------ */
+
 /* UNIVERSAL */
+
 /* ------------------------------------------------------ */
 
 /* ------------------------------------------------------ */
+
 /* HEADER SECTION */
+
 /* ------------------------------------------------------ */
 
-nav{
+nav {
     border-top: #2980b9 5px solid;
     width: 100%;
     height: auto;
     background-color: #FFF;
 }
 
-nav ul{
+nav ul {
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
-nav ul li{
+nav ul li {
     margin: auto;
     padding: 1em;
 }
 
 /* Overwrite Bootstrap classes to change link colours */
-.navbar-nav.ml-auto li.nav-item a.nav-link{
+
+.navbar-nav.ml-auto li.nav-item a.nav-link {
     color: #888;
 }
 
-.navbar-nav.ml-auto li.nav-item a.nav-link:hover{
+.navbar-nav.ml-auto li.nav-item a.nav-link:hover {
     color: #2980b9;
 }
 
 
 /* Logo Animation: grey -> teal; angled -> vertical */
-.logo{
+
+.logo {
     height: 80px;
     width: 80px;
     filter: grayscale(100%);
     transition: all 0.5s ease-out;
 }
 
-.logo:hover{
+.logo:hover {
     filter: none;
     transform: rotate(45deg);
 }
@@ -278,29 +347,30 @@ nav ul li{
 
 
 /* ------------------------------------------------------ */
+
 /* FOOTER */
+
 /* ------------------------------------------------------ */
 
-footer{
+footer {
     border-top: #2980b9 5px solid;
     background-color: #FFF;
-    padding: 4em;
 }
 
-.footer-links{
+.footer-links {
     margin: 2em;
     text-align: center;
 }
 
 
-.footer-links ul{
+.footer-links ul {
     list-style-type: none;
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.footer-links ul li a{
+.footer-links ul li a {
     color: #888;
     padding: 2em;
 }
@@ -311,13 +381,13 @@ footer{
 }
 
 
-.copyright{
+.copyright {
     display: flex;
     justify-content: flex-end;
     padding-top: 2em;
 }
 
-.copyright-text{
+.copyright-text {
     color: #BBB;
 }
 
@@ -325,96 +395,105 @@ footer{
 
 
 /* ------------------------------------------------------ */
+
 /* HOME PAGE */
+
 /* ------------------------------------------------------ */
 
 /* ------------------------------------------------------ */
+
 /* INTRO SECTION */
+
 /* ------------------------------------------------------ */
 
-.jumbotron{ 
+.jumbotron {
     background-color: #fff;
-} 
+}
 
 
 /* ------------------------------------------------------ */
+
 /* PROJECTS SECTION */
+
 /* ------------------------------------------------------ */
 
-#projects{
+#projects {
     background-color: #FFF;
     /* border-top: #DDD 1px solid; */
     padding: 2em 0 5em;
     align-content: center;
 }
 
-.card{
+.card {
     margin: 0 auto 2em;
-    padding: 1em;
+    border-radius: 20px;
     background-color: #fff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* Level 2 drop shadow - adjusted */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /* Level 2 drop shadow - adjusted */
     overflow: hidden;
 }
 
-.card:hover{
+.card:hover {
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: box-shadow .2s ease-in;
     transform: scale(1.01);
 }
 
-.card-body{
-    padding: 1em;
-    text-align: center;
+.card-body {
+    padding: 2em;
     position: relative;
 }
 
-a .card-link{
+a .card-link {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    text-decoration: none; /* Link doesn't get underlines */
-    z-index: 10; /* Raise anchor tag above anything else
+    text-decoration: none;
+    /* Link doesn't get underlines */
+    z-index: 10;
+    /* Raise anchor tag above anything else
     Workaround to make clickable in IE */
     opacity: 0;
     filter: alpha(opacity=0);
 }
 
-.card-title{
-    font-weight: 700;
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 1.25em;
+    color: #868686;
+    margin: 1em 0 2em;
+}
+
+.card-text {
     color: #4C4C4C;
-    margin-bottom: 1em;
+    /* Set colours to override link defaults*/
 }
 
-.card-text{
-    color: #4C4C4C; /* Set colours to override link defaults*/
-}
-
-.card-img-top{
-    max-width: 300px;
+.card-img-top {
     height: auto;
-    padding: 2em 0;  
 }
 
-.card-tag{
+.card-tag {
     list-style: none;
     padding: 0;
 }
 
-.card-tag li{
+.card-tag li {
     display: inline;
     background-color: #BBB;
-    margin: 0.25em;
+    margin: 0 0.5em 0 0;
     padding: 0.5em 1em;
     color: #FFF;
-    border-radius: 10px;
-    font-size: 0.75em;
+    border-radius: 15px;
+    font-size: 0.6em;
 }
 
-.table{
+.table {
     display: table;
     margin: 0 auto;
 }
@@ -422,181 +501,171 @@ a .card-link{
 
 
 /* ------------------------------------------------------ */
+
 /* ABOUT PAGE */
+
 /* ------------------------------------------------------ */
 
 /* ------------------------------------------------------ */
+
 /* PRIMER SECTION */
+
 /* ------------------------------------------------------ */
 
-.portrait{
+.portrait {
     width: 200px;
     display: block;
-    margin: auto;
+    margin: 3em;
+}
+
+
+.f-card-img {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
 }
 
 
 /* ------------------------------------------------------ */
-/* BACKGROUND SECTION */
+
+/* LETTER SECTION */
+
 /* ------------------------------------------------------ */
 
-#background{
-    padding: 1em 0 5em;
+#letter {
+    padding: 5em 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2;
     background-color: #FFF;
 }
 
 
-.f-card{
-    margin: 1em 0 0;
-    padding: 2em;
-    background-color: #fff;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 1px rgba(0,0,0,0.2); 
-    overflow: hidden;
-}
-
-.f-card-body{
-    color: #4C4C4C;
-}
-
-.f-card-img{
-    width: auto;
-    height: 100%;
-    overflow: hidden;   
-}
-
-
-/* ------------------------------------------------------ */
-/* LETTER SECTION */
-/* ------------------------------------------------------ */
-
-
-#letter{
-    padding: 5em 0;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 2;
-    background-color: #FAFAFA;
-}
-
-.strike{
-    text-decoration: line-through;
-}
-
-.ending-image{
-    width: 50%;
-    height: auto;
-}
-
 
 
 
 
 /* ------------------------------------------------------ */
-/* UWBC CASE STUDY PAGE */ 
+
+/* UWBC CASE STUDY PAGE */
+
 /* ------------------------------------------------------ */
 
 /* ------------------------------------------------------ */
-/* REACH CASE STUDY PAGE */ 
+
+/* REACH CASE STUDY PAGE */
+
 /* ------------------------------------------------------ */
 
-
 /* ------------------------------------------------------ */
+
 /* COLOURS */
+
 /* ------------------------------------------------------ */
 
-.highlight-uwbc{
-  color: #C0392B;  
-} 
+.highlight-uwbc {
+    color: #C0392B;
+}
 
-.bg-uwbc{
+.bg-uwbc {
     background-color: #C0392B;
 }
 
-.highlight-reach{
-  color: #00AA8D;  
-} 
+.highlight-reach {
+    color: #00AA8D;
+}
 
-.bg-reach{
+.bg-reach {
     background-color: #00AA8D;
 }
 
-.highlight-ers{
-  color: #F5A623;  
-} 
+.highlight-ers {
+    color: #F5A623;
+}
 
-.bg-reach{
+.bg-reach {
     background-color: #F5A623;
 }
 
 
 
 /* ------------------------------------------------------ */
+
 /* CLASSES */
+
 /* ------------------------------------------------------ */
 
-.mockups{
+.mockups {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     margin: 5em 0;
 }
 
-.approach-process{
+.approach-process {
     max-width: 100%;
     height: auto;
     margin-bottom: 1em;
 }
 
 
-.limit-img-50{
+.limit-img-50 {
     max-width: 50%;
     height: auto;
 }
 
-.limit-img-25{
+.limit-img-25 {
     max-width: 25%;
     height: auto;
 }
 
-.img-small{
+.limit-img-height {
+    height: 50vh;
+    width: auto;
+}
+
+.img-small {
     width: 300px;
 }
 
 
 /* ------------------------------------------------------ */
+
 /* GREY BACKGROUND SECTION */
+
 /* ------------------------------------------------------ */
 
-.bg-grey{
+.bg-grey {
     padding: 5em 0;
     background-color: #FAFAFA;
 }
 
-.bg-grey h4{
+.bg-grey h4 {
     margin: 2em 0;
 }
 
-.bg-grey img{
+.bg-grey img {
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
 }
 
 /* ------------------------------------------------------ */
+
 /* WHITE BACKGROUND SECTION */
+
 /* ------------------------------------------------------ */
 
-.bg-white{
+.bg-white {
     padding: 5em 0;
     background-color: #FFF;
 }
 
-.bg-white h4{
+.bg-white h4 {
     margin: 2em 0;
 }
 
-.bg-white img{
+.bg-white img {
     max-width: 100%;
     height: auto;
     margin: 1.5em 0;
 }
-
