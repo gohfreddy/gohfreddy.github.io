@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1.1em;
     line-height: 1.8;
     padding: 0;
     margin: 0;
     background-color: #FFF;
-    color: #4C4C4C;
+    color: #555;
 }
 
 a,
@@ -96,8 +96,8 @@ h5{
 /* Body Text */
 
 p {
-    font: 300, 1em, 'Open sans', sans-serif;
-    color: #4C4C4C;
+    font: 200, 1em, 'Open sans', sans-serif;
+    color: #555;
     margin-bottom: 1.5em;
     /* Adding bottom margin */
 }
@@ -113,15 +113,15 @@ p {
 .about-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
 
 .about-header {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 1.25em;
+    font-weight: 600;
+    font-size: 1.5em;
     color: #AAA;
     margin: 1em 0 2em;
 }
@@ -463,14 +463,14 @@ a .card-link {
 
 .card-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 1.25em;
-    color: #868686;
+    color: #555;
     margin: 1em 0 2em;
 }
 
 .card-text {
-    color: #4C4C4C;
+    color: #555;
     /* Set colours to override link defaults*/
 }
 
@@ -485,7 +485,7 @@ a .card-link {
 
 .card-tag li {
     display: inline;
-    background-color: #BBB;
+    background-color: #AAA;
     margin: 0 0.5em 0 0;
     padding: 0.5em 1em;
     color: #FFF;
